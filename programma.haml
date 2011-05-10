@@ -1,0 +1,229 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "stylesheets/programma.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "programma.html"} programma
+					%li
+						%a.button{:href => "location.html"} location
+					%li
+						%a.button{:href => "partecipa.html"} partecipa
+					%li
+						%a.button{:href => "speakers.html"} speakers
+					%li
+						%a.button{:href => "sponsor.html"} sponsors
+			.logo
+			.motto
+				%h1 Vogliamo diffondere la conoscenza sull'ecosistema di Ruby in Italia.
+				%h2 Non perdere la possibilità di pubblicizzarti, sponsorizza Rubyday!
+			.content
+				%h1 Programma
+				%table#programma
+					%thead
+						%tr
+							%th.hours
+							%th.track
+								Track A
+							%th.track
+								Track B
+					%tbody
+						%tr
+							%td.hours
+								%div
+									09:30
+								%div
+									10:00 
+							%td.keynote{:colspan => 2}
+								%a
+									Keynote 
+								%br
+								%em
+									Andrea Franz
+						%tr
+							%td.hours
+								%div
+									10:00
+								%div
+									10:45
+							%td
+								%a
+									Aelous
+								%br
+								%em
+									Francesco Vollero
+							%td
+								%a
+									Rails landing
+								%br
+								%em
+									Emanuele DelBono, Claudio Maccari
+						%tr.grey
+							%td.hours
+								%div
+									10:45
+								%div	
+									11:00
+							%td.pausa{:colspan => 2}
+								Break 
+						%tr
+							%td.hours
+								%div
+									11:00
+								%div
+									11:45
+							%td
+								%a
+									Varnish e caching di applicazioni Rails
+								%br
+								%em
+									Antonio Carpentieri
+							%td
+								%a
+									MacRuby
+								%br
+								%em
+									Simone D'amico
+						%tr.grey
+							%td.hours
+								%div
+									11:45
+								%div
+									12:00
+							%td.pausa{:colspan => 2}
+								Break 
+						%tr
+							%td.hours
+								%div
+									12:00
+								%div
+									12:45
+							%td
+								%a
+									Analisi statica per un linguaggio dinamico
+								%br
+								%em
+									Marco Borromeo
+							%td
+								%a
+									Symfony2 and Ror3 friends for an hour
+								%br
+								%em
+									Alessandro Cinelli, Sandro Paganotti, Alberto Barrilà
+						%tr.grey
+							%td.hours
+								%div
+									12:45
+								%div
+									14:30
+							%td.pausa{:colspan => 2}
+								Pranzo
+						%tr
+							%td.hours
+								%div
+									14:30
+								%div
+									15:15
+							%td
+								%a
+									A metaprogramming Spell Book for Ruby and Rails
+								%br
+								%em	
+									Paolo Perrotta
+								
+							%td
+								%a
+									Webby: ASCII alchemy for quick website authoring
+								%br
+								%em	
+									Andrea Schiavini
+						%tr.grey
+							%td.hours
+								%div
+									15:15
+								%div
+									15:30
+							%td.pausa{:colspan => 2}
+								Break 
+						%tr
+							%td.hours
+								%div
+									15:30
+								%div
+									16:15
+							%td
+								%a
+									Progettare e sviluppare mobile web applications utilizzando Mockup, Sencha Touch e Sinatra
+								%br
+								%em
+									Matteo Collina e Daniele Bottillo
+							%td
+								%a
+									Minegems: Hosting privato di gemme 
+								%br
+								%em
+									Luca Guidi
+						%tr.grey
+							%td.hours
+								%div
+									16:15
+								%div
+									16:30
+							%td.pausa{:colspan => 2}
+								Break 
+						%tr
+							%td.hours
+								%div
+									16:30
+								%div
+									17:15
+							%td
+								%a
+									RSpec best practices 
+								%br
+								%em
+									Simone Carletti
+							%td
+								%a
+									To batch or not to batch
+								%br
+								%em
+									Luca Mearelli
+						%tr.grey
+							%td.hours
+								%div
+									17:15
+								%div
+									17:30
+							%td.pausa{:colspan => 2}
+								Break 
+						%tr
+							%td.hours
+								%div
+									17:30
+								%div
+									18:15
+							%td
+								%a
+									REST in peace
+								%br
+								%em
+									Alessandro Nadalin
+							%td
+								%a
+									Solid design for Rails applications
+								%br
+								%em
+									Matteo Vaccari
+
+		.footer

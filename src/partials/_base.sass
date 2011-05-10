@@ -48,20 +48,23 @@ a.button
 		+border-radius(5px)
 		border: 1px solid $dark-red
 		background: $red
-		+linear-gradient(color-stops($light-red, $red))
+		@include background-image(linear-gradient($light-red,$red))
 		color: $white
 		text-shadow: 0 1px 0 $grey
 		text-decoration: none
 	&:active
 		position: relative
 		top: 1px
-		+linear-gradient(color-stops($red, $red))
+		@include background-image(linear-gradient($red,$red))
 		color: darken($white, 20%)
 
 ul > li
 	list-style: inside disc
 
-
+em
+	font-style: italic
+	font-size: 90%
+	
 body > .container
 	
 	> .content
@@ -70,16 +73,30 @@ body > .container
 		padding-bottom: 80px
 		overflow: hidden
 		
+		> h1
+			font-size: 36px
+			font-weight: $boldFont
+			margin: 0 auto 15px auto
+			padding-bottom: 8px
+			border-bottom: 1px solid $red
+			
+
 		> .section
 			width: 8*40px
 			float: left
 			
-			> h1
+			> h2
 				width: 6*40px
 				margin: 0 auto 15px auto
 				font-size: 18px
 				font-weight: $boldFont
-			
+				
+			> h3
+				width: 6*40px
+				margin: 0 auto 15px auto
+				font-size: 16px
+				font-weight: $boldFont
+		
 			> p, ul
 				width: 6*40px
 				margin: 0 auto 20px auto

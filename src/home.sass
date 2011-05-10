@@ -3,6 +3,7 @@
 @import partials/footer
 
 body > .container
+	margin-bottom: 30px
 	> .logo
 		width: 652px
 		height: 142px
@@ -15,9 +16,38 @@ body > .container
 		margin-bottom: 100px
 		text-align: center
 		
-		> h1
+		> h2
 			font-size: 24px
 			font-weight: $boldFont
 			margin-bottom: 10px
-		> h2
+		> h3
 			font-size: 16px
+body > h2
+	font-size: 36px
+	font-weight: $boldFont
+	color: $white
+	margin-bottom: 10px
+			
+body > .sponsors
+	text-align: left
+	width: 960px
+	position: relative
+	padding-bottom: 40px
+	overflow: hidden
+	background: $white
+	+border-top-radius(10px)
+	+border-bottom-radius(10px)
+	+single-box-shadow(rgba(0, 0, 0, 0.8), 0, 3px, 15px)
+	
+	> .sponsor
+		padding-top: 20px
+		width: 12*40px
+		height: 120px
+		float: left
+		position: relative
+		
+		> a
+			padding-left: 60px
+			position: absolute
+			bottom: 0
+		
