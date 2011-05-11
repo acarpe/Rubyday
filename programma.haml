@@ -25,209 +25,225 @@
 						%a.button{:href => "sponsor.html"} sponsors
 			.content
 				%h1 Programma
-				%table#programma
-					%thead
-						%tr
-							%th.hours
-							%th.track
-								Track A
-							%th.track
-								Track B
-					%tbody
-						%tr.grey
-							%td.hours
-								%div
-									09:00
-								%div
-									09:30 
-							%td.pausa{:colspan => 2}
-								Registrazione
-						%tr
-							%td.hours
-								%div
-									09:30
-								%div
-									10:00 
-							%td.keynote{:colspan => 2}
-								%a
-									Keynote 
-								%br
-								%em
-									Andrea Franz
-						%tr
-							%td.hours
-								%div
-									10:00
-								%div
-									10:45
-							%td
-								%a{href: "talks/aeolus.html"}
-									Aeolus
-								%br
-								%em
-									Francesco Vollero
-							%td
-								%a{href: "talks/rails-landing.html"}
-									Rails landing
-								%br
-								%em
-									Emanuele DelBono, Claudio Maccari
-						%tr.grey
-							%td.hours
-								%div
-									10:45
-								%div	
-									11:00
-							%td.pausa{:colspan => 2}
-								Break 
-						%tr
-							%td.hours
-								%div
-									11:00
-								%div
-									11:45
-							%td
-								%a{href: "talks/varnish-e-caching-di-applicazioni-rails.html"}
-									Varnish e caching di applicazioni Rails
-								%br
-								%em
-									Antonio Carpentieri
-							%td
-								%a{href: "talks/macruby.html"}
-									MacRuby
-								%br
-								%em
-									Simone D'amico
-						%tr.grey
-							%td.hours
-								%div
-									11:45
-								%div
-									12:00
-							%td.pausa{:colspan => 2}
-								Break 
-						%tr
-							%td.hours
-								%div
-									12:00
-								%div
-									12:45
-							%td
-								%a{href: "talks/analisi-statica-per-un-linguaggio-dinamico.html"}
-									Analisi statica per un linguaggio dinamico
-								%br
-								%em
-									Marco Borromeo
-							%td
-								%a{href: "talks/symfony2-and-ror3-friends-for-an-hour.html"}
-									Symfony2 and Ror3 friends for an hour
-								%br
-								%em
-									Alessandro Cinelli, Sandro Paganotti, Alberto Barrilà
-						%tr.grey
-							%td.hours
-								%div
-									12:45
-								%div
-									14:30
-							%td.pausa{:colspan => 2}
-								Pranzo
-						%tr
-							%td.hours
-								%div
-									14:30
-								%div
-									15:15
-							%td
-								%a{href: "talks/a-metaprogramming-spell-book-for-ruby-and-rails.html"}
-									A metaprogramming Spell Book for Ruby and Rails
-								%br
-								%em	
-									Paolo Perrotta
+				.generic-section
+					%table#programma
+						%thead
+							%tr
+								%th.hours
+								%th.track
+									Track A
+								%th.track
+									Track B
+						%tbody
+							%tr.grey
+								%td.hours
+									%div
+										09:00
+									%div
+										09:30 
+								%td.pausa{:colspan => 2}
+									Registrazione
+							%tr
+								%td.hours
+									%div
+										09:30
+									%div
+										10:00 
+								%td.keynote{:colspan => 2}
+									%a
+										Keynote 
+									%br
+									%em
+										Andrea Franz
+							%tr
+								%td.hours
+									%div
+										10:00
+									%div
+										10:45
+								%td
+									%a{href: "talks/aeolus.html"}
+										Aeolus
+									%br
+									%em
+										Francesco Vollero
+								%td
+									%a{href: "talks/rails-landing.html"}
+										Rails landing
+									%br
+									%em
+										Emanuele DelBono, Claudio Maccari
+							%tr.grey
+								%td.hours
+									%div
+										10:45
+									%div	
+										11:00
+								%td.pausa{:colspan => 2}
+									Break 
+							%tr
+								%td.hours
+									%div
+										11:00
+									%div
+										11:45
+								%td
+									%a{href: "talks/varnish-e-caching-di-applicazioni-rails.html"}
+										Varnish e caching di applicazioni Rails
+									%br
+									%em
+										Antonio Carpentieri
+								%td
+									%a{href: "talks/macruby.html"}
+										MacRuby
+									%br
+									%em
+										Simone D'amico
+							%tr.grey
+								%td.hours
+									%div
+										11:45
+									%div
+										12:00
+								%td.pausa{:colspan => 2}
+									Break 
+							%tr
+								%td.hours
+									%div
+										12:00
+									%div
+										12:45
+								%td
+									%a{href: "talks/analisi-statica-per-un-linguaggio-dinamico.html"}
+										Analisi statica per un linguaggio dinamico
+									%br
+									%em
+										Marco Borromeo
+								%td
+									%a{href: "talks/symfony2-and-ror3-friends-for-an-hour.html"}
+										Symfony2 and Ror3 friends for an hour
+									%br
+									%em
+										Alessandro Cinelli, Sandro Paganotti, Alberto Barrilà
+							%tr.grey
+								%td.hours
+									%div
+										12:45
+									%div
+										14:30
+								%td.pausa{:colspan => 2}
+									Pranzo
+							%tr
+								%td.hours
+									%div
+										14:30
+									%div
+										15:15
+								%td
+									%a{href: "talks/a-metaprogramming-spell-book-for-ruby-and-rails.html"}
+										A metaprogramming Spell Book for Ruby and Rails
+									%br
+									%em	
+										Paolo Perrotta
 								
-							%td
-								%a{href: "talks/webby-ascii-alchem-for-quick-website-authoring.html"}
-									Webby: ASCII alchemy for quick website authoring
-								%br
-								%em	
-									Andrea Schiavini
-						%tr.grey
-							%td.hours
-								%div
-									15:15
-								%div
-									15:30
-							%td.pausa{:colspan => 2}
-								Break 
-						%tr
-							%td.hours
-								%div
-									15:30
-								%div
-									16:15
-							%td
-								%a{href: "talks/progettare-e-sviluppare-mobile-web-applications-utilizzando-mockup-senchatouch-e-sinatra.html"}
-									Progettare e sviluppare mobile web applications utilizzando Mockup, Sencha Touch e Sinatra
-								%br
-								%em
-									Matteo Collina e Daniele Bottillo
-							%td
-								%a{href: "talks/minegems-hosting-privato-di-gemme.html"}
-									Minegems: Hosting privato di gemme 
-								%br
-								%em
-									Luca Guidi
-						%tr.grey
-							%td.hours
-								%div
-									16:15
-								%div
-									16:30
-							%td.pausa{:colspan => 2}
-								Break 
-						%tr
-							%td.hours
-								%div
-									16:30
-								%div
-									17:15
-							%td
-								%a{href: "talks/rspec-best-practices.html"}
-									RSpec best practices 
-								%br
-								%em
-									Simone Carletti
-							%td
-								%a{href: "talks/to-batch-or-not-to-batch.html"}
-									To batch or not to batch
-								%br
-								%em
-									Luca Mearelli
-						%tr.grey
-							%td.hours
-								%div
-									17:15
-								%div
-									17:30
-							%td.pausa{:colspan => 2}
-								Break 
-						%tr
-							%td.hours
-								%div
-									17:30
-								%div
-									18:15
-							%td
-								%a{href: "talks/rest-in-peace.html"}
-									REST in peace
-								%br
-								%em
-									Alessandro Nadalin
-							%td
-								%a{href: "talks/solid-design-for-rails-applications.html"}
-									Solid design for Rails applications
-								%br
-								%em
-									Matteo Vaccari
+								%td
+									%a{href: "talks/webby-ascii-alchem-for-quick-website-authoring.html"}
+										Webby: ASCII alchemy for quick website authoring
+									%br
+									%em	
+										Andrea Schiavini
+							%tr.grey
+								%td.hours
+									%div
+										15:15
+									%div
+										15:30
+								%td.pausa{:colspan => 2}
+									Break 
+							%tr
+								%td.hours
+									%div
+										15:30
+									%div
+										16:15
+								%td
+									%a{href: "talks/progettare-e-sviluppare-mobile-web-applications-utilizzando-mockup-senchatouch-e-sinatra.html"}
+										Progettare e sviluppare mobile web applications utilizzando Mockup, Sencha Touch e Sinatra
+									%br
+									%em
+										Matteo Collina e Daniele Bottillo
+								%td
+									%a{href: "talks/minegems-hosting-privato-di-gemme.html"}
+										Minegems: Hosting privato di gemme 
+									%br
+									%em
+										Luca Guidi
+							%tr.grey
+								%td.hours
+									%div
+										16:15
+									%div
+										16:30
+								%td.pausa{:colspan => 2}
+									Break 
+							%tr
+								%td.hours
+									%div
+										16:30
+									%div
+										17:15
+								%td
+									%a{href: "talks/rspec-best-practices.html"}
+										RSpec best practices 
+									%br
+									%em
+										Simone Carletti
+								%td
+									%a{href: "talks/to-batch-or-not-to-batch.html"}
+										To batch or not to batch
+									%br
+									%em
+										Luca Mearelli
+							%tr.grey
+								%td.hours
+									%div
+										17:15
+									%div
+										17:30
+								%td.pausa{:colspan => 2}
+									Break 
+							%tr
+								%td.hours
+									%div
+										17:30
+									%div
+										18:15
+								%td
+									%a{href: "talks/rest-in-peace.html"}
+										REST in peace
+									%br
+									%em
+										Alessandro Nadalin
+								%td
+									%a{href: "talks/solid-design-for-rails-applications.html"}
+										Solid design for Rails applications
+									%br
+									%em
+										Matteo Vaccari
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}
 
 		.footer
