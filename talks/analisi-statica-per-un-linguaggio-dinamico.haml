@@ -1,0 +1,57 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "../programma.html"} programma
+					%li
+						%a.button{:href => "../location.html"} location
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button{:href => "../speakers.html"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 Analisi statica per un linguaggio dinamico
+				.talk-section
+					%h2 
+						Speaker: 
+						%a
+							Marco Borromeo
+					%p		
+						Tutti sappiamo che Ruby è definito un linguaggio "dinamico", e accostarlo alla parola "statico" fa un pò impressione.
+					%p
+						Ma ci sono casi dove analizzare staticamente il nostro codice può far solo bene: l'analisi statica ci permette di identificare velocemente blocchi di codice ripetuti o molto simili tra loro, verificare la copertura dei tests, eventuali problemi sul design del codice, trovare files che cambiano spesso e misurare la complessità media del codice.
+					%p
+						Tenere costantemente monitorati questi dati durante lo sviluppo ci permette di prevenire situazioni dove diventa difficile mantenere il codice, fare bugfixing o introdurre nuove funzionalità.
+
+					%p
+						Durante il talk verranno esaminati i principali tool a disposizione per gestire l'analisi statica di codice Ruby, con esempi di refactoring di codice reale a partire dai dati emersi dalle analisi.
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}
+				

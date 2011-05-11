@@ -1,0 +1,54 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "../programma.html"} programma
+					%li
+						%a.button{:href => "../location.html"} location
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button{:href => "../speakers.html"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 A Metaprogramming Spell Book
+				.talk-section
+					%h2 
+						Speaker: 
+						%a
+							Paolo Perrotta
+					%p		
+						When I started to learn Ruby, I was awed by the code of experienced rubyists. That code was full of amazing magic tricks that I could barely understand. People called those tricks metaprogramming.
+					%p
+						With time, I found that metaprogramming sits right at the core of Ruby. To really understand Ruby, I had to understand all those scary tricks! Feeling like a sorcerer's apprentice, I set out to write a Spell Book of metaprogramming techniques. Once I'd finished the Spell Book, metaprogramming didn't seem like black magic anymore. Instead, it just felt like any other set of techniques.
+					%p
+						In this talk, I'll show you the content of my Spell Book, so that you don't have to go through the trouble of writing one yourself.
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}
+		

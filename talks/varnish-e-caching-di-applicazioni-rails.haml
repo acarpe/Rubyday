@@ -1,0 +1,56 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "../programma.html"} programma
+					%li
+						%a.button{:href => "../location.html"} location
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button{:href => "../speakers.html"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 Varnish e caching di applicazioni Rails
+				.talk-section
+					%h2 
+						Speaker: 
+						%a
+							Antonio Carpentieri
+					%p.quote
+						"Varnish Cache is an open-source web application accelerator. You install it in front of any server that speaks HTTP and you can configure it to cache the contents."
+					%p
+						Come utilizzare e configurare Varnish davanti a Rails 2.3.x e Rails 3.0.x per far lavorare le tue macchine solo quando è necessario.
+					%p
+						Vedremo come evitare i più comuni pitfall ed ottenere un caching efficace, a partire dall’esperienza fatta nell’integrazione di Varnish su una applicazione web in Rails attualmente in produzione.
+					%p
+						Vedremo anche quali sono i risultati in termini di performance e carico sulle nostre macchine."
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}
+				

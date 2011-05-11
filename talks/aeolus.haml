@@ -1,0 +1,55 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "../programma.html"} programma
+					%li
+						%a.button{:href => "../location.html"} location
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button{:href => "../speakers.html"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 Aeolus
+				.talk-section
+					%h2 
+						Speaker: 
+						%a
+							Francesco Vollero
+					%p		
+						Aeolus è un progetto sponsorizzato da RedHat che si propone di offrire un sistema completo di gestione delle immagini di macchine virtuali, eseguirle nella loro infrastruttura interna (es. VMware vSphere, RHEV) e nello stesso tempo copiare/eseguire/gestire queste immagini virtuali in diversi cloud hosters (es. Amazon EC2, Rackspace, IBM Smart Business Cloud, Microsoft Azure, etc).
+					%p
+						Potrebbe apparire un'idiozia al primo sguardo ma è una opzione nel caso in cui, supponiamo, amazon ec2 va giù e possiamo avere la stessa VM (diciamo) su Rackspace ed eseguirla lì.
+					%p
+						Aeolus si occupa di tutto ciò che riguarda la conversione/trasferimento/etc automaticamente.
+					%p
+						Molte parti di questo progetto sono in Ruby. Qualche esempio? Uno dei componenti più importanti, deltacloud è scritto in Sinatra, parti della gestione delle code è scritto in Ruby e la nostra interfaccia UI è scritta in Rails.
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}

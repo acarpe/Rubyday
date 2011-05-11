@@ -1,0 +1,57 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "../programma.html"} programma
+					%li
+						%a.button{:href => "../location.html"} location
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button{:href => "../speakers.html"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 REST in peace
+				.talk-section
+					%h2 
+						Speaker: 
+						%a
+							Alessandro Nadalin
+					%p		
+						Negli ultimi 15 anni abbiamo re-inventato la ruota in modo da spingere applicazioni web efficienti e scalabili in rete, spesso dimenticando come lo stile architetturale REST ci ha dato, da dieci anni, un ampio insieme di vincoli qualitativi da poter perseguire.
+					%p
+						Ancor peggio, le definizioni di RESTsi sono duplicate e hanno dato vita a filoni di pensiero totalmente estranei alla pubblicazione originale di Roy Fielding.
+					%p
+						In questo intervento guarderemo ciò che è realmente REST e cosa stiamo perdendo ignorando i suoi principi di questo stile architetturale. 
+					%p
+						Perché non dovremmo avere più cache applicativa? Perché dovremmo essere in grado di costruire servizi fault-tolerant senza LoCs? Cos'é il vincolo sugli hypermedia che tutti chiamano HATEOAS? Come possiamo garantirci grandi performance attraverso la specifica di caching HTTP, amata da REST, e la tecnologia ESI ( Edge Side Inlcudes )?
+					%p
+						Lo scopriremo.
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}

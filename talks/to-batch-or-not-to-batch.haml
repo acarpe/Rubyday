@@ -1,0 +1,95 @@
+!!! 5
+%html
+	%head
+		%title RubyDay
+		%link{:rel => "stylesheet", :type => "text/css", :href => "../stylesheets/talk.css", :media => "all"}/
+		%meta{:charset => "UTF-8"}
+	%body
+		.container
+			.header
+				.info
+					Domande?
+					%a{:href => "mailto:info@rubyday.it"} info@rubyday.it
+				%ul.nav
+					%li
+						%a.button{:href => "/"} home
+					%li
+						%a.button.current{:href => "../programma.html"} programma
+					%li
+						%a.button{:href => "../location.html"} location
+					%li
+						%a.button{:href => "../partecipa.html"} partecipa
+					%li
+						%a.button{:href => "../speakers.html"} speakers
+					%li
+						%a.button{:href => "../sponsor.html"} sponsors
+			.content
+				%h1 To batch or not to batch
+				.talk-section
+					%h2 
+						Speaker: 
+						%a
+							Luca Mearelli
+					%p		
+						Sviluppare una applicazione web sembra essere diventato molto semplice da quando abbiamo framework come rails o sinatra, ma la realtà è un po' più complessa di quello che sembra :)
+					%p
+						Qualunque applicazione dovrà fare una o più di queste operazioni, o operazioni simili:
+						%ul
+							%li
+								mandare email
+							%li
+								generare documenti o esportazioni dei dati
+							%li
+								ridimensionare o trasformare foto
+							%li
+								interrogare web service remoti
+					%p
+						Tutte queste sono troppo lente e pesanti per essere eseguite nel normale ciclo di richiesta/risposta.
+					%p
+						Non potendo eseguire certe attività in poche frazioni di secondo, l'unica possibilità che abbiamo è farle al di fuori dell'applicazione, utilizzando un meccanismo di esecuzione asincrono.
+					%p
+						Quando l'applicazione si trova a dover eseguire un'attività ""lenta"", ne potrà lanciare l'esecuzione e potrà proseguire a rispondere all'utente senza doverne aspettare la conclusione. Nei casi in cui sia necessario utilizzare il risultato dell'operazione asincrona, si farà in modo che questi possano essere recuperati con facilità.
+					%p
+						Questo permette all'applicazione di rimanere rapida e reattiva alle richieste degli utenti e rende  più facile farla scalare.
+					%p
+						Oltre alle operazioni ""lente"" richieste dagli utente, è spesso necessario eseguire attività di manutenzione programmata (ad esempio: la pulizia delle sessioni), vedremo dunque come alcuni strumenti permettono di programmare nel tempo le attività asincrone, indipendentemente dalle richieste degli utenti.
+					%p
+						Esistono varie possibilità e librerie che permettono di implementare un sistema del genere e durante il talk utilizzando vari esempi, parleremo soprattutto di code, workers, & co:
+						%ul
+							%li
+								Resque
+							%li
+								Delayed_job
+					%p
+						Ma anche di crontab:
+						%ul
+							%li
+								Craken
+							%li
+								Whenever
+					%p
+						Accennando infine ad altri approcci (attuali & storici)
+						%ul
+							%li
+								Beanstalkd and Stalker
+							%li
+								BackgroundRb
+							%li
+								SQS
+							%li
+								Nanite
+				.sponsor-section
+					%h2
+						Sponsors
+					.sponsor
+						%a{:href => "http://www.mikamai.com?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/mikamai.png", :alt => "Mikamai"}
+					.sponsor
+						%a{:href => "http://www.xpeppers.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/xpeppers.png", :alt => "XPeppers"}
+					.sponsor
+						%a{:href => "http://www.jetbrains.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:width => 250, :height => 96, :src => "http://www.jetbrains.com/img/logos/logo_jetbrains.gif", :alt => "JetBrains"}
+					.sponsor
+						%a{:href => "http://www.pragprog.com/?utm_source=RubyDay&amp;utm_medium=website&amp;utm_campaign=rubydaysponsorship"}
+							%img{:src => "../images/pragmaticbookshelf.png", :alt => "Pragmatic Bookshelf"}

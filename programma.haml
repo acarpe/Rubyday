@@ -23,10 +23,6 @@
 						%a.button{:href => "speakers.html"} speakers
 					%li
 						%a.button{:href => "sponsor.html"} sponsors
-			.logo
-			.motto
-				%h1 Vogliamo diffondere la conoscenza sull'ecosistema di Ruby in Italia.
-				%h2 Non perdere la possibilità di pubblicizzarti, sponsorizza Rubyday!
 			.content
 				%h1 Programma
 				%table#programma
@@ -38,6 +34,14 @@
 							%th.track
 								Track B
 					%tbody
+						%tr.grey
+							%td.hours
+								%div
+									09:00
+								%div
+									09:30 
+							%td.pausa{:colspan => 2}
+								Registrazione
 						%tr
 							%td.hours
 								%div
@@ -57,13 +61,13 @@
 								%div
 									10:45
 							%td
-								%a
-									Aelous
+								%a{href: "talks/aeolus.html"}
+									Aeolus
 								%br
 								%em
 									Francesco Vollero
 							%td
-								%a
+								%a{href: "talks/rails-landing.html"}
 									Rails landing
 								%br
 								%em
@@ -83,13 +87,13 @@
 								%div
 									11:45
 							%td
-								%a
+								%a{href: "talks/varnish-e-caching-di-applicazioni-rails.html"}
 									Varnish e caching di applicazioni Rails
 								%br
 								%em
 									Antonio Carpentieri
 							%td
-								%a
+								%a{href: "talks/macruby.html"}
 									MacRuby
 								%br
 								%em
@@ -109,13 +113,13 @@
 								%div
 									12:45
 							%td
-								%a
+								%a{href: "talks/analisi-statica-per-un-linguaggio-dinamico.html"}
 									Analisi statica per un linguaggio dinamico
 								%br
 								%em
 									Marco Borromeo
 							%td
-								%a
+								%a{href: "talks/symfony2-and-ror3-friends-for-an-hour.html"}
 									Symfony2 and Ror3 friends for an hour
 								%br
 								%em
@@ -135,14 +139,14 @@
 								%div
 									15:15
 							%td
-								%a
+								%a{href: "talks/a-metaprogramming-spell-book-for-ruby-and-rails.html"}
 									A metaprogramming Spell Book for Ruby and Rails
 								%br
 								%em	
 									Paolo Perrotta
 								
 							%td
-								%a
+								%a{href: "talks/webby-ascii-alchem-for-quick-website-authoring.html"}
 									Webby: ASCII alchemy for quick website authoring
 								%br
 								%em	
@@ -162,13 +166,13 @@
 								%div
 									16:15
 							%td
-								%a
+								%a{href: "talks/progettare-e-sviluppare-mobile-web-applications-utilizzando-mockup-senchatouch-e-sinatra.html"}
 									Progettare e sviluppare mobile web applications utilizzando Mockup, Sencha Touch e Sinatra
 								%br
 								%em
 									Matteo Collina e Daniele Bottillo
 							%td
-								%a
+								%a{href: "talks/minegems-hosting-privato-di-gemme.html"}
 									Minegems: Hosting privato di gemme 
 								%br
 								%em
@@ -188,13 +192,13 @@
 								%div
 									17:15
 							%td
-								%a
+								%a{href: "talks/rspec-best-practices.html"}
 									RSpec best practices 
 								%br
 								%em
 									Simone Carletti
 							%td
-								%a
+								%a{href: "talks/to-batch-or-not-to-batch.html"}
 									To batch or not to batch
 								%br
 								%em
@@ -214,13 +218,13 @@
 								%div
 									18:15
 							%td
-								%a
+								%a{href: "talks/rest-in-peace.html"}
 									REST in peace
 								%br
 								%em
 									Alessandro Nadalin
 							%td
-								%a
+								%a{href: "talks/solid-design-for-rails-applications.html"}
 									Solid design for Rails applications
 								%br
 								%em
