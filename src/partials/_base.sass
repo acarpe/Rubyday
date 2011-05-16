@@ -5,13 +5,20 @@
 @import compass/css3
 
 $white			: #eaeaea
-$grey				: #363636
+$gray				: #363636
 $red				: #880d1e
 $light-red	: #e3002f
 $dark-red		: #730000
+$green			: #06BC14
+$yellow			: #D6BB29
+$orange			: #D28911
+$magenta		: #EA41AF
+$blue				: #1838EA
+$cyan				: #47B2B2
 
-$lightFont	:	300
-$boldFont		: 500
+$lightFont		:	300
+$normalFont		: 500
+$boldFont			: 700
 
 @font-face
 	font-family: LeagueGothicRegular
@@ -26,8 +33,8 @@ body
 	height: auto
 	margin: 0 auto
 	padding: 0
-	background: url("../images/bg.png") repeat $grey
-	color: $grey
+	background: url("../images/bg.png") repeat $gray
+	color: $gray
 	font-family: "Helvetica Neue", sans-serif
 	font-weight: $lightFont
 	
@@ -40,7 +47,9 @@ a
 	&:hover
 		text-decoration: underline
 	&[href^="http://"]
+		display: inline-block
 		padding-right: 20px
+		line-height: 20px
 		background: url("../images/arrow.png") no-repeat right
 		&:hover
 			padding-right: 25px
@@ -49,8 +58,9 @@ a.button
 	padding: 5px
 	border: 1px solid transparent
 	text-transform: uppercase
-	color: $grey
+	color: $gray
 	font-weight: $boldFont
+	+box-shadow(rgba(255, 255, 255, 0.6) 0 1px 0 inset)
 	+transition("none")
 	&.current, &:hover
 		+border-radius(5px)
@@ -58,7 +68,7 @@ a.button
 		background: $red
 		@include background-image(linear-gradient($light-red,$red))
 		color: $white
-		text-shadow: 0 1px 0 $grey
+		text-shadow: 0 1px 0 $gray
 		text-decoration: none
 	&:active
 		position: relative
